@@ -1,6 +1,6 @@
 {
   "name": "extended_event_emitter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An event emitter class that extends node emitter to provide type guard",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "test": "npx mocha",
     "watch": "npx mocha -w",
     "build": "npx tsc -p .",
-    "build-docs": "npx typedoc --out docs src/index.ts --disableOutputCheck",
+    "build-docs": "npx typedoc --out docs src/index.ts",
     "prepublishOnly": "npm run build && npm run build-docs"
   },
   "lint-staged": {

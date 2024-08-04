@@ -15,7 +15,7 @@ export interface IEventEmitter<
   T extends string | symbol,
   U extends ICallbackTypes<T>
 > extends INodeEventEmitter {
-  subscribe(event: T, callback: U[T]): void;
+  subscribe<K extends T>(event: K, callback: U[K]): void;
 
-  publish(event: T, ...args: TCallbackArgsType<T>): void;
+  publish<K extends T>(event: K, ...args: TCallbackArgsType<K>): void;
 }
