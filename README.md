@@ -1,5 +1,6 @@
 # Xtended Event Emitter
 This package helps to create properly typed events
+[npm](https://www.npmjs.com/package/extended_event_emitter)
 
 ## Exports
 - `ICallbackTypes`: Type guard for your event callbacks mapping.
